@@ -6,10 +6,10 @@ h1 {
     font-family: verdana;
     font-size: 300%;
 }
-h1  {
+body {
     color: red;
     font-family: courier;
-    font-size: 160%;
+    font-size: 100%;
 }
 </style>
 </head>

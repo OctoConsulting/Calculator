@@ -13,7 +13,7 @@ body {
 }
 </style>
 </head>
- <h1>Demo Calculator App</h1>
+ <h1>Demo Calculator App Step1</h1>
         <body>
        
                 <form action="CalculateServlet" method="GET">

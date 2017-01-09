@@ -21,6 +21,7 @@ public class CalculateServlet extends HttpServlet {
 	int result = 0;
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+		int abc = 10;
 		String numberStr1 = request.getParameter("number1");
 		String numberStr2 = request.getParameter("number2");
 		String mathOp = request.getParameter("mathOperation");
@@ -32,19 +33,24 @@ public class CalculateServlet extends HttpServlet {
 		
 		if (mathOp.equals(CalculatorConstants.ADDITION)) {
 			result = calculator.findSum(number1.intValue(), number2.intValue());
+			System.out.println("The result is " + result);
 		}else if(mathOp.equals(CalculatorConstants.SUBTRACTION)) {
 			result = calculator.findDifference(number1.intValue(), number2.intValue());
+			System.out.println("The result is " + result);
 		}else if(mathOp.equals(CalculatorConstants.MULTIPLICATION)) {
 			result = calculator.findProduct(number1.intValue(), number2.intValue());
+			System.out.println("The result is " + result);
 		}else if(mathOp.equals(CalculatorConstants.DIVISION)) {
 			try {
 				result = calculator.findDivision(number1.intValue(), number2.intValue());
+				System.out.println("The result is " + result);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}else {
 			boolean booleanResult = true;
 			booleanResult = calculator.compareNumbers(number1.intValue(), number2.intValue());
+			System.out.println("The result is " + booleanResult);
 			result = (booleanResult) ? 1 : 0;
 		}
 		request.setAttribute("result", result);

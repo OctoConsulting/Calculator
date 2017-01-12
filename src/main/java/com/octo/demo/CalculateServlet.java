@@ -20,6 +20,7 @@ public class CalculateServlet extends HttpServlet {
 	private Integer number2 = new Integer(0);
 	int result = 0;
 	int resultNotUsed = 0;
+	//Implement addition CALC-1
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		int abc = 10;

@@ -6,4 +6,5 @@ public class CalculatorConstants {
 	public static final String MULTIPLICATION = "Multiply";
 	public static final String DIVISION = "Divide";
 	public static final String COMPARISON = "Compare";
+	public static final String COMPARISON = "Squareroot";
 }

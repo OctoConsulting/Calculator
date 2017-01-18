@@ -25,6 +25,7 @@ public class CalculateServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		int abc = 10;
 		String numberStr1 = request.getParameter("number1");
+		System.out.prinln("The numberStr1" + numberStr1);
 		String numberStr2 = request.getParameter("number2");
 		String mathOp = request.getParameter("mathOperation");
 		if (numberStr1 != null && !numberStr1.isEmpty())

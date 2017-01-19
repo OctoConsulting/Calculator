@@ -4,7 +4,7 @@
 h1 {
     color: yellow;
     font-family: verdana;
-    font-size: 300%;
+    font-size: 310%;
 }
 body {
     color: brown;

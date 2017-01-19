@@ -27,6 +27,7 @@ public class CalculateServlet extends HttpServlet {
 		String numberStr1 = request.getParameter("number1");
 		System.out.prinln("The numberStr1" + numberStr1);
 		String numberStr2 = request.getParameter("number2");
+		System.out.prinln("The numberStr2" + numberStr2);
 		String mathOp = request.getParameter("mathOperation");
 		if (numberStr1 != null && !numberStr1.isEmpty())
 			number1 = Integer.parseInt(numberStr1);

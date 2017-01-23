@@ -18,7 +18,7 @@ public class CalculateServlet extends HttpServlet {
 	private DemoCalculator calculator = new DemoCalculator();
 	private Integer number1 = new Integer(0);
 	private Integer number2 = new Integer(0);
-	private Integer number 3 = new Integer(1);
+	private Integer number3 = new Integer(1);
 	int result = 0;
 	int resultNotUsed = 0;
 	//Implement addition CALC-1

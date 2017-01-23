@@ -18,7 +18,7 @@ public class DemoCalculator implements DemoCalculatorInterface {
 
 	/* (non-Javadoc)
 	 * @see com.octo.sonar.demo.sampleproject.DemoCalculatorInterface#findSum(int, int)
-	 * Addition of two numbers
+	 * Addition of two numbers simple addition
 	 */
 	public int findSum(int a, int b) {
 		return a + b;

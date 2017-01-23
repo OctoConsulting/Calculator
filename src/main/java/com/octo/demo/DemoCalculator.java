@@ -10,7 +10,7 @@ package com.octo.demo;
 public class DemoCalculator implements DemoCalculatorInterface {
 
 	/**
-	 * This is the demo calculator class
+	 * This is the demo calculator class Constructor
 	 */
 	public DemoCalculator() {
 		// TODO Auto-generated constructor stub

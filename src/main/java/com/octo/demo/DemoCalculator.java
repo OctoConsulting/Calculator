@@ -25,14 +25,16 @@ public class DemoCalculator implements DemoCalculatorInterface {
 	}
 
 	/* (non-Javadoc)
-	 * @see com.octo.sonar.demo.sampleproject.DemoCalculatorInterface#findDifference(int, int)
+	 * @see com.octo.sonar.demo.sampleproject.DemoCalculatorInterface
+	 * #findDifference(int, int)
 	 */
 	public int findDifference(int a, int b) {
 		return a - b;
 	}
 
 	/* (non-Javadoc)
-	 * @see com.octo.sonar.demo.sampleproject.DemoCalculatorInterface#findProduct(int, int)
+	 * @see com.octo.sonar.demo.sampleproject.DemoCalculatorInterface
+	 * #findProduct(int, int)
 	 */
 	public int findProduct(int a, int b) {
 		return a * b;

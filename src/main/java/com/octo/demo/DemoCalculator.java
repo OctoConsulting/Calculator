@@ -4,7 +4,7 @@
 package com.octo.demo;
 
 /**
- * @author Viswanath.Nandanavan
+ * @author Viswanath.Nandanavanam
  *
  */
 public class DemoCalculator implements DemoCalculatorInterface {

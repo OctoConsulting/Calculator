@@ -8,4 +8,5 @@ public class CalculatorConstants {
 	public static final String COMPARISON = "Compare";
 	public static final String SQUAREROOT = "Squareroot";
 	public static final String FACTORIAL = "Factorial";
+	public static final String EXPONENTIAL = "Exponential";
 }

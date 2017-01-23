@@ -71,6 +71,9 @@ public class CalculateServlet extends HttpServlet {
 			booleanResult = calculator.compareNumbers(number1.intValue(), number2.intValue());
 			System.out.println("The result is " + booleanResult);
 			result = (booleanResult) ? 1 : 0;
+			System.out.println("The result is " + booleanResult);
+			System.out.println("The result is " + booleanResult);
+			System.out.println("The result is " + booleanResult);
 		}
 		request.setAttribute("result", result);
 		//Forwarding to result.jsp

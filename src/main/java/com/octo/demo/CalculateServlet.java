@@ -12,7 +12,7 @@ import com.octo.utils.CalculatorConstants;
 
 public class CalculateServlet extends HttpServlet {
 	/**
-	 * 
+	 * CalculateServlet doGet method
 	 */
 	private static final long serialVersionUID = 1L;
 	private DemoCalculator calculator = new DemoCalculator();
@@ -30,6 +30,7 @@ public class CalculateServlet extends HttpServlet {
 		String numberStr2 = request.getParameter("number2");
 		System.out.prinln("The numberStr2" + numberStr2);
 		String mathOp = request.getParameter("mathOperation");
+		
 		if (numberStr1 != null && !numberStr1.isEmpty())
 			number1 = Integer.parseInt(numberStr1);
 		

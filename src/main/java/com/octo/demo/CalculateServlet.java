@@ -73,6 +73,7 @@ public class CalculateServlet extends HttpServlet {
 			result = (booleanResult) ? 1 : 0;
 		}
 		request.setAttribute("result", result);
+		//Forwarding to result.jsp
 		RequestDispatcher dispatcher=request.getRequestDispatcher("/result.jsp");
 	    dispatcher.forward(request, response);
 	    return;

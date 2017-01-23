@@ -21,8 +21,9 @@ public class CalculateServlet extends HttpServlet {
 	private Integer number3 = new Integer(1);
 	int result = 0;
 	int resultNotUsed = 0;
+	
+	
 	//Implement addition CALC-1
-
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		int abc = 10;
 		String numberStr1 = request.getParameter("number1");
@@ -54,6 +55,7 @@ public class CalculateServlet extends HttpServlet {
 			result = calculator.findProduct(number1.intValue(), number2.intValue());
 			int cde = 10;
 			System.out.println("The result is " + result);
+			int def = 100;
 		}else if(mathOp.equals(CalculatorConstants.DIVISION)) {
 			try {
 				result = calculator.findDivision(number1.intValue(), number2.intValue());

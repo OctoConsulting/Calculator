@@ -56,6 +56,7 @@ public class CalculateServlet extends HttpServlet {
 			int cde = 10;
 			System.out.println("The result is " + result);
 			int def = 100;
+			int efg = 114;
 		}else if(mathOp.equals(CalculatorConstants.DIVISION)) {
 			try {
 				result = calculator.findDivision(number1.intValue(), number2.intValue());

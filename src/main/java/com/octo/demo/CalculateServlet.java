@@ -7,7 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import java.io.*;
 import com.octo.utils.CalculatorConstants;
 
 public class CalculateServlet extends HttpServlet {
@@ -27,11 +27,11 @@ public class CalculateServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 		int abc = 10;
 		String numberStr1 = request.getParameter("number1");
-		System.out.prinln("The numberStr1" + numberStr1);
+		System.out.println("The numberStr1" + numberStr1);
 		String numberStr2 = request.getParameter("number2");
-		System.out.prinln("The numberStr2" + numberStr2);
+		System.out.println("The numberStr2" + numberStr2);
 		String mathOp = request.getParameter("mathOperation");
-		System.out.prinln("The mathOp" + mathOp);
+		System.out.println("The mathOp" + mathOp);
 		if (numberStr1 != null && !numberStr1.isEmpty())
 			number1 = Integer.parseInt(numberStr1);
 		

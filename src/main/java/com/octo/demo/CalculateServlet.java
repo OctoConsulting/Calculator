@@ -39,7 +39,7 @@ public class CalculateServlet extends HttpServlet {
 			number2 = Integer.parseInt(numberStr2);
 		
 		if (mathOp.equals(CalculatorConstants.ADDITION)) {
-			result = calculator.findSum(number1.intValue(), number2.intValue());
+			result = calculator.findSum(number1.intValue(),  number2.intValue());
 			System.out.println("The result is " + result);
 			int bcd = 10;
 		}else if(mathOp.equals(CalculatorConstants.SUBTRACTION)) {

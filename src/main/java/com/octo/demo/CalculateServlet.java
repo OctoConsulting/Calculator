@@ -41,7 +41,6 @@ public class CalculateServlet extends HttpServlet {
 		if (mathOp.equals(CalculatorConstants.ADDITION)) {
 			result = calculator.findSum(number1.intValue(),  number2.intValue());
 			System.out.println("The result is " +  result);
-			int bcd = 10;
 		}else if(mathOp.equals(CalculatorConstants.SUBTRACTION)) {
 			result = calculator.findDifference(number1.intValue(), number2.intValue());
 			System.out.println("The result is " + result);
@@ -49,7 +48,6 @@ public class CalculateServlet extends HttpServlet {
 			System.out.println("The result is " + result);
 			System.out.println("The result is " + result);
 			System.out.println("The result is " + result);
-//			System.out.println("The result is " + result);
 			System.out.println("The result is " + result);
 		}else if(mathOp.equals(CalculatorConstants.MULTIPLICATION)) {
 			result = calculator.findProduct(number1.intValue(), number2.intValue());

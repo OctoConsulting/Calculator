@@ -21,6 +21,7 @@ public class DemoCalculator implements DemoCalculatorInterface {
 	 * Addition of two numbers simple addition
 	 */
 	public int findSum(int a, int b) {
+		System.out.println("The value of a" + a + "The value of b is " + b);
 		return a + b;
 	}
 

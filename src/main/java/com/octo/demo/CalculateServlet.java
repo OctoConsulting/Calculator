@@ -48,7 +48,6 @@ public class CalculateServlet extends HttpServlet {
 			System.out.println("The result is " + result);
 			System.out.println("The result is " + result);
 			System.out.println("The result is " + result);
-			System.out.println("The result is " + result);
 		}else if(mathOp.equals(CalculatorConstants.MULTIPLICATION)) {
 			result = calculator.findProduct(number1.intValue(), number2.intValue());
 			System.out.println("The result is " + result);

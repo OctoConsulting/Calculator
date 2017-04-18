@@ -53,7 +53,6 @@ public class CalculatorTest {
 //		calculator.findDivision(10, 0);
 //	}
 
-	@Ignore
 	@Test
 	public void testEqual() {
 		boolean result = calculator.compareNumbers(20, 20);
@@ -61,7 +60,6 @@ public class CalculatorTest {
 		assertFalse(result);
 	}
 
-	@Ignore
 	@Test
 	public void testSubstraction() {
 		int result = 10 - 3;

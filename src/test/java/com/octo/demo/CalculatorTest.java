@@ -33,7 +33,7 @@ public class CalculatorTest {
 
 	@Test
 	public void testSum() {
-		int result = calculator.findSum(3, 4);
+		int result = calculator.findSum(4, 4);
 		assertEquals(7, result);
 	}
 

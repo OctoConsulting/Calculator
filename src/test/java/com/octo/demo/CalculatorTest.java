@@ -37,21 +37,21 @@ public class CalculatorTest {
 		assertEquals(7, result);
 	}
 
-//	@Test
-//	public void testDivison() {
-//		try {
-//			int result = calculator.findDivision(12, 2);
-//
-//			assertEquals(6, result);
-//		} catch (Exception e) {
-//			e.printStackTrace(System.err);
-//		}
-//	}
-//
-//	@Test(expected = Exception.class)
-//	public void testDivisionException() throws Exception {
-//		calculator.findDivision(10, 0);
-//	}
+	@Test
+	public void testDivison() {
+		try {
+			int result = calculator.findDivision(12, 2);
+
+			assertEquals(6, result);
+		} catch (Exception e) {
+			e.printStackTrace(System.err);
+		}
+	}
+
+	@Test(expected = Exception.class)
+	public void testDivisionException() throws Exception {
+		calculator.findDivision(10, 0);
+	}
 
 	@Test
 	public void testEqual() {

@@ -62,8 +62,8 @@ public class CalculatorTest {
 
 	@Test
 	public void testSubstraction() {
-		int result = 10 - 3;
+		int result = calculator.findDifference(10,3);
 
-		assertTrue(7, result);
+		assertEquals(7, result);
 	}
 	}

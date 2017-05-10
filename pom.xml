@@ -11,8 +11,9 @@
 	<properties>
 	 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
  		<sonar.language>java</sonar.language>
- 		<sonar.sources>src/main</sonar.sources>
- 		<sonar.tests>src/test</sonar.tests>
+ 		<sonar.sources>src/main/java</sonar.sources>
+ 		<sonar.tests>src/test/java</sonar.tests>
+ 		<sonar.binaries>target/classes</sonar.binaries>
 		<sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 		<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
@@ -21,7 +22,7 @@
         <jdk.version>1.8</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Only unit tests are run by default. -->
-        <skip.integration.tests>true</skip.integration.tests>
+        <skip.integration.tests>false</skip.integration.tests>
         <skip.unit.tests>false</skip.unit.tests>
 	</properties>
 	 

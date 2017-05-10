@@ -14,17 +14,13 @@ import org.junit.Test;
  * Unit test for simple App.
  */
 public class CalculatorTest {
-	private static DemoCalculator calculator;
+	private static DemoCalculator calculator = new DemoCalculator();
 
-	@BeforeClass
-	public static void initCalculator() {
-		calculator = new DemoCalculator();
-	}
 
-	@Before
-	public void beforeEachTest() {
-		System.out.println("This is executed before each Test ");
-	}
+//	@Before
+//	public void beforeEachTest() {
+//		System.out.println("This is executed before each Test ");
+//	}
 
 	@After
 	public void afterEachTest() {

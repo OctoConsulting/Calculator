@@ -1,0 +1,172 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.octo.demo</groupId>
+	<artifactId>Calculator</artifactId>
+	<packaging>war</packaging>
+
+	<version>1.0.0-SNAPSHOT</version>
+	<name>SampleWebApp Calculator</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+    <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+    <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+    <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+		  <groupId>joda-time</groupId>
+		  <artifactId>joda-time</artifactId>
+		  <version>2.9.4</version>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<finalName>Calculator</finalName>
+		<plugins>
+			<!-- Compiler -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<!--  plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.16</version>
+			</plugin>-->
+			 <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.15</version>
+            <configuration>
+                <skip>true</skip>
+            </configuration>
+            <executions>
+                <execution>
+                    <id>surefire-unit-tests</id>
+                    <phase>test</phase>
+                    <goals>
+                        <goal>test</goal>
+                    </goals>
+                    <configuration>
+                        <!-- Sets the VM argument line used when unit tests are run. -->
+                        <argLine>${surefireArgLine}</argLine>
+                        <!-- Skips unit tests if the value of skip.unit.tests property is true -->
+                        <skipTests>${skip.unit.tests}</skipTests>
+                        <!-- Excludes integration tests when unit tests are run. -->
+                        <skip>false</skip>
+                        <excludes>
+                            <exclude>**/*IntegrationTests.java</exclude>
+                        </excludes>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <version>2.15</version>
+            <executions>
+                <!--
+                    Ensures that both integration-test and verify goals of the Failsafe Maven
+                    plugin are executed.
+                -->
+                <execution>
+                    <id>integration-tests</id>
+                    <goals>
+                        <goal>integration-test</goal>
+                        <goal>verify</goal>
+                    </goals>
+                    <configuration>
+                        <!-- Sets the VM argument line used when integration tests are run. -->
+                        <argLine>${failsafeArgLine}</argLine>
+                        <!--
+                            Skips integration tests if the value of skip.integration.tests property
+                            is true
+                        -->
+                        <skipTests>${skip.integration.tests}</skipTests>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.7.10</version>
+				 <executions>
+                <!--
+                    Prepares the property pointing to the JaCoCo runtime agent which
+                    is passed as VM argument when Maven the Surefire plugin is executed.
+                -->
+				<execution>
+                    <id>pre-unit-test</id>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                    <configuration>
+                        <!-- Sets the path to the file which contains the execution data. -->
+                        <destFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</destFile>
+                        <!--
+                            Sets the name of the property containing the settings
+                            for JaCoCo runtime agent.
+                        -->
+                        <propertyName>surefireArgLine</propertyName>
+                    </configuration>
+                </execution>
+                <!--
+                    Ensures that the code coverage report for unit tests is created after
+                    unit tests have been run.
+                -->
+                <execution>
+                    <id>post-unit-test</id>
+                    <phase>test</phase>
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                    <!-- 
+                    <configuration>
+                         Sets the path to the file which contains the execution data. 
+                        <dataFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</dataFile>
+                         Sets the output directory for the code coverage report. 
+                        <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
+                    </configuration>
+                    -->
+                     <configuration>
+               			 <destFile>${sonar.jacoco.reportPath}</destFile>
+            		</configuration>
+                </execution>
+            </executions>
+        </plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>1.2</version>
+				<configuration>
+				   <findbugsXmlOutput>true</findbugsXmlOutput>
+				   <findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+				   <xmlOutput>true</xmlOutput>
+				</configuration>
+			 </plugin>
+			</plugins>
+	</build>
+	
+</project>

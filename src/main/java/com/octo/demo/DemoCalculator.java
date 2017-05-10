@@ -39,6 +39,7 @@ public class DemoCalculator implements DemoCalculatorInterface {
 		int c;
 		c = a-b;
 		System.out.println("The difference is " + c);
+		System.out.println("The difference is again " + c);
 		return c;
 	}
 

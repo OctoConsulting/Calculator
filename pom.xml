@@ -9,16 +9,9 @@
 	<name>SampleWebApp Calculator</name>
 	<url>http://maven.apache.org</url>
 	<properties>
-	<sonar.sources>src/main</sonar.sources>
-	<sonar.tests>src/test</sonar.tests>
-	<!-- Below property indicates the pattern of the test suite -->
-	<runSuite>**/*Suite.class</runSuite>
-	<!-- Sonar-JaCoCo properties -->
-	<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-	<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-	<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
-	<sonar.language>java</sonar.language>
-	<argLine>${argLine} -Xmx2048m</argLine>
+  <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+  <sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
+  <sonar.language>java</sonar.language>
 </properties>
 	 
 	<dependencies>
@@ -43,130 +36,35 @@
 
 	</dependencies>
 	<build>
-		<finalName>Calculator</finalName>
-		<plugins>
-			<!-- Compiler -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.3</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-surefire-plugin</artifactId>
-    <version>2.18.1</version>
-   <configuration>
-    <argLine>-server -ea -XX:MaxPermSize=256m -Xmx4g -XX:-UseSplitVerifier ${argLine}</argLine>
-  </configuration>
-  </plugin>
-  <plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>build-helper-maven-plugin</artifactId>
-    <version>1.10</version>
-    <executions>
-      <execution>
-        <id>add-test-source</id>
-        <phase>process-test-sources</phase>
-        <goals>
-          <goal>add-test-source</goal>
-        </goals>
-        <configuration>
-          <sources>
-            <source>src/it/java</source>
-          </sources>
-        </configuration>
-      </execution>
-      <execution>
-        <id>add-test-resource</id>
-        <phase>generate-test-resources</phase>
-        <goals>
-          <goal>add-test-resource</goal>
-        </goals>
-        <configuration>
-          <resources>
-            <resource>
-              <directory>src/it/resources</directory>
-            </resource>
-          </resources>
-        </configuration>
-      </execution>
-    </executions>
-  </plugin>
-  <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-failsafe-plugin</artifactId>
-    <version>2.19.1</version>
-    <configuration>
-     <argLine>-Xmx4096m -XX:MaxPermSize=512M ${itCoverageAgent}</argLine>
-    </configuration>
-    <executions>
-      <execution>
-        <goals>
-          <goal>integration-test</goal>
-        </goals>
-      </execution>
-    </executions>
-  </plugin>
-  <plugin>
-    <groupId>org.jacoco</groupId>
-    <artifactId>jacoco-maven-plugin</artifactId>
-    <version>0.7.6.201602180812</version>
-    <configuration>
-      <includes>
-      <include>**/src/main/java</include>
-      </includes>
-    </configuration>        
-    <executions>
-      <execution>
-        <id>pre-unit-test</id>
-        <phase>process-test-classes</phase>
-        <goals>
-          <goal>prepare-agent</goal>
-        </goals>
-        <configuration>
-          <destFile>${project.build.directory}/coverage-reports/jacoco-unit.exec</destFile>
-          <propertyName>argLine</propertyName>
-        </configuration>
-      </execution>
-      <execution>
-        <id>post-unit-test</id>
-        <phase>test</phase>
-        <goals>
-          <goal>report</goal>
-        </goals>
-        <configuration>
-          <dataFile>${project.build.directory}/coverage-reports/jacoco-unit.exec</dataFile>
-          <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
-        </configuration>
-      </execution>
-      <execution>
-        <id>pre-integration-test</id>
-        <phase>pre-integration-test</phase>
-        <goals>
-          <goal>prepare-agent-integration</goal>
-        </goals>
-        <configuration>
-          <destFile>${project.build.directory}/coverage-reports/jacoco-unit.exec</destFile>
-        </configuration>
-      </execution>
-      <execution>
-        <id>post-integration-test</id>
-        <phase>post-integration-test</phase>
-        <goals>
-          <goal>report-integration</goal>
-        </goals>
-        <configuration>
-          <dataFile>${project.build.directory}/coverage-reports/jacoco-unit.exec</dataFile>
-          <outputDirectory>${project.reporting.outputDirectory}/jacoco-unit</outputDirectory>
-        </configuration>
-      </execution>
-    </executions>
-  </plugin>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>2.18.1</version>
+    </plugin>
+    <plugin>
+      <groupId>org.jacoco</groupId>
+      <artifactId>jacoco-maven-plugin</artifactId>
+      <version>0.7.9</version>
+      <configuration>
+        <append>true</append>
+      </configuration>
+      <executions>
+        <execution>
+          <goals>
+            <goal>prepare-agent</goal>
+          </goals>
+        </execution>
+        <execution>
+          <id>post-unit-test</id>
+          <phase>test</phase>
+          <goals>
+            <goal>report</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
   </plugins>
-  </build>
+</build>
 	
 </project>

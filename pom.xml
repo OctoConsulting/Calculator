@@ -59,6 +59,11 @@
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
+             <plugin>
+		        <groupId>org.sonarsource.scanner.maven</groupId>
+		        <artifactId>sonar-maven-plugin</artifactId>
+		        <version>3.2</version>
+      		</plugin>
 			<plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -185,6 +190,20 @@
                 </executions>
             </plugin>
 		</plugins>
+		
     </build>
-	
+	<profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <sonar.host.url>
+                  http://ec2-52-53-210-15.us-west-1.compute.amazonaws.com:9000
+                </sonar.host.url>
+            </properties>
+        </profile>
+     </profiles>
 </project>

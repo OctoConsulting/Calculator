@@ -5,7 +5,6 @@ package com.octo.demo;
 
 /**
  * @author Viswanath.Nandanavanam
- * 
  */
 public class DemoCalculator implements DemoCalculatorInterface {
 
@@ -35,7 +34,6 @@ public class DemoCalculator implements DemoCalculatorInterface {
 	public int findDifference(int a, int b) {
 		int c;
 		c = a-b;
-		System.out.println("The difference is " + c);
 		System.out.println("The difference is again " + c);
 		return c;
 	}

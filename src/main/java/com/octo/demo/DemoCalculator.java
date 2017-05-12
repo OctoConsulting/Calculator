@@ -24,9 +24,6 @@ public class DemoCalculator implements DemoCalculatorInterface {
 		int c;
 		c = a+b;
 		System.out.println("The value of a" + a + " The value of b is " + b);
-		System.out.println("The value of a" + a + " The value of b is " + b);
-		System.out.println("The value of a" + a + " The value of b is " + b);
-		System.out.println("The value of a" + a + " The value of b is " + b);
 		return c;
 		
 	}

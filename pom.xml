@@ -17,8 +17,8 @@
 		<sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 		<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
-		<jacoco.it.execution.data.file>${project.build.directory}/coverage-reports/jacoco-it.exec</jacoco.it.execution.data.file>
-        <jacoco.ut.execution.data.file>${project.build.directory}/coverage-reports/jacoco-ut.exec</jacoco.ut.execution.data.file>
+		<jacoco.it.execution.data.file>${project.build.directory}/target/coverage-reports/jacoco-it.exec</jacoco.it.execution.data.file>
+        <jacoco.ut.execution.data.file>${project.build.directory}/target/coverage-reports/jacoco-ut.exec</jacoco.ut.execution.data.file>
         <jdk.version>1.8</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Only unit tests are run by default. -->

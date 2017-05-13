@@ -24,7 +24,6 @@ public class DemoCalculator implements DemoCalculatorInterface {
 		c = a+b;
 		System.out.println("The value of a" + a + " The value of b is " + b);
 		return c;
-		
 	}
 
 	/* (non-Javadoc)
@@ -34,7 +33,7 @@ public class DemoCalculator implements DemoCalculatorInterface {
 	public int findDifference(int a, int b) {
 		int c;
 		c = a-b;
-		System.out.println("The difference is again " + c);
+		System.out.println("The difference is" + c);
 		return c;
 	}
 

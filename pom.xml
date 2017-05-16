@@ -13,6 +13,8 @@
 		<sonar.language>java</sonar.language>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+		<sonar.sources>/home/jenkins/.jenkins/workspace/$JOB_NAME/src/main</sonar.sources>
+		<sonar.tests>/home/jenkins/.jenkins/workspace/$JOB_NAME/src/test</sonar.tests>
 		<sonar.jacoco.reportPath>${project.basedir}/target/jacoco.exec</sonar.jacoco.reportPath>
 		<sonar.jacoco.itReportPath>${project.basedir}/../target/itjacoco.exec</sonar.jacoco.itReportPath>
 		<sonar.surefire.reportsPath>target/surefire-reports</sonar.surefire.reportsPath>

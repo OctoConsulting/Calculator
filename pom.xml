@@ -11,15 +11,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<sonar.language>java</sonar.language>
-		<sonar.sources>src/main/java</sonar.sources>
-		<sonar.tests>src/test/java</sonar.tests>
-		<sonar.binaries>target/classes</sonar.binaries>
-		<sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
-		<sonar.jacoco.reportPath>build/jacoco/UT/jacocoUT.exec</sonar.jacoco.reportPath>
-		<jacoco.it.execution.data.file>${project.build.directory}/target/coverage-reports/jacoco-it.exec</jacoco.it.execution.data.file>
-		<jacoco.ut.execution.data.file>${project.build.directory}/target/coverage-reports/jacoco-ut.exec</jacoco.ut.execution.data.file>
-		<sonar.junit.reportsPath>target/surefire-reports</sonar.junit.reportsPath>
+		<sonar.jacoco.reportPath>${project.basedir}/target/jacoco.exec</sonar.jacoco.reportPath>
+		<sonar.jacoco.itReportPath>${project.basedir}/../target/itjacoco.exec</sonar.jacoco.itReportPath>
 		<sonar.surefire.reportsPath>target/surefire-reports</sonar.surefire.reportsPath>
 		<jdk.version>1.8</jdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -3,11 +3,11 @@
 <style>
 h1 {
     color: brown;
-    font-family: Garamond;
+    font-family: Arial;
     font-size: 134%
 }
 body {
-    color: brown;
+    color: red;
     font-family: courier;
     font-size: 100%;
 }

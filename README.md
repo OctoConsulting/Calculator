@@ -1,1 +1,1 @@
-# Calculator App for Hackathon Demo
+# Calculator App for Hackathon Demo App

@@ -18,8 +18,8 @@ body {
         <body>
        
                 <form action="CalculateServlet" method="GET">
-                        Number 122 : <input type="text" name="number1"> <br>
-                        Number 224 : <input type="text" name="number2"> <br> 
+                        Number 1: <input type="text" name="number1"> <br>
+                        Number 2: <input type="text" name="number2"> <br> 
                         Operator : 
                         
                         <select name="mathOperation">

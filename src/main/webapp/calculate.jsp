@@ -2,24 +2,24 @@
 <head>
 <style>
 h1 {
-    color: red;
-    font-family: garamond;
+    color: orange;
+    font-family: Courier;
     font-size: 134%
 }
 body {
-    color: red;
-    font-family: garamond;
+    color: orange;
+    font-family: arial;
     font-size: 100%;
 }
 </style>
 </head>
 <title>Your Own Simple Calculator</title>
- <h1>Demo Calculator App Step1 and Step2</h1>
+ <h1>Demo Calculator App Step1344 and Step442</h1>
         <body>
        
                 <form action="CalculateServlet" method="GET">
-                        Number 1: <input type="text" name="number1"> <br>
-                        Number 2: <input type="text" name="number2"> <br> 
+                        Number ee1: <input type="text" name="number1"> <br>
+                        Number 2ee: <input type="text" name="number2"> <br> 
                         Operator : 
                         
                         <select name="mathOperation">

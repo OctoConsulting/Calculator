@@ -2,13 +2,13 @@
 <head>
 <style>
 h1 {
-    color: brown;
-    font-family: Arial;
+    color: red;
+    font-family: garamond;
     font-size: 134%
 }
 body {
     color: red;
-    font-family: courier;
+    font-family: garamond;
     font-size: 100%;
 }
 </style>

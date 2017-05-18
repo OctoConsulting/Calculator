@@ -13,6 +13,7 @@ body {
 }
 </style>
 </head>
+<title>Your Own Simple Calculator</title>
  <h1>Demo Calculator App Step1 and Step2</h1>
         <body>
        

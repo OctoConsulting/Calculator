@@ -3,23 +3,23 @@
 <style>
 h1 {
     color: orange;
-    font-family: Courier;
-    font-size: 134%
+    font-family: garamond;
+    font-size: 234%
 }
 body {
-    color: orange;
+    color: yellow;
     font-family: arial;
     font-size: 100%;
 }
 </style>
 </head>
 <title>Your Own Simple Calculator</title>
- <h1>Demo Calculator App Step1344 and Step442</h1>
+ <h1>Demo Calculator App</h1>
         <body>
        
                 <form action="CalculateServlet" method="GET">
-                        Number ee1: <input type="text" name="number1"> <br>
-                        Number 2ee: <input type="text" name="number2"> <br> 
+                        Number1: <input type="text" name="number1"> <br>
+                        Number2: <input type="text" name="number2"> <br> 
                         Operator : 
                         
                         <select name="mathOperation">

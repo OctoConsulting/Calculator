@@ -27,11 +27,11 @@ public class CalculatorTest {
 		System.out.println("This is exceuted after each Test ");
 	}
 
-//	@Test
-//	public void testSum() {
-//		int result = calculator.findSum(4, 4);
-//		assertEquals(8, result);
-//	}
+	@Test
+	public void testSum() {
+		int result = calculator.findSum(4, 4);
+		assertEquals(8, result);
+	}
 
 	@Test
 	public void testDivison() {
@@ -44,10 +44,10 @@ public class CalculatorTest {
 		}
 	}
 
-	//@Test(expected = Exception.class)
-	//public void testDivisionException() throws Exception {
-		//calculator.findDivision(10, 0);
-	//}
+	@Test(expected = Exception.class)
+	public void testDivisionException() throws Exception {
+		calculator.findDivision(10, 0);
+	}
 
 	@Test
 	public void testEqual() {

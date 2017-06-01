@@ -2,19 +2,19 @@
 <head>
 <style>
 h1 {
-    color: red;
+    color: brown;
     font-family: garamond;
     font-size: 234%
 }
 body {
-    color: green;
+    color: Red;
     font-family: arial;
     font-size: 100%;
 }
 </style>
 </head>
 <title>Your Own Simple Calculator</title>
- <h1>Demo Calculator App May 22 2017</h1>
+ <h1>Demo Calculator App June 1 2017</h1>
         <body>
        
                 <form action="CalculateServlet" method="GET">

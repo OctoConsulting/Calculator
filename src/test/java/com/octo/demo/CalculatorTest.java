@@ -29,8 +29,8 @@ public class CalculatorTest {
 
 	@Test
 	public void testSum() {
-		int result = calculator.findSum(4, 4);
-		assertEquals(8, result);
+		int result = calculator.findSum(4, 5);
+		assertEquals(9, result);
 	}
 
 	@Test

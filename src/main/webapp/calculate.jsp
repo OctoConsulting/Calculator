@@ -2,7 +2,7 @@
 <head>
 <style>
 h1 {
-    color: brown;
+    color: yellow;
     font-family: garamond;
     font-size: 234%
 }

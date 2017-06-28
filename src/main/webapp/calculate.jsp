@@ -4,7 +4,7 @@
 h1 {
     color: yellow;
     font-family: garamond;
-    font-size: 214%
+    font-size: 218%
 }
 body {
     color: Red;

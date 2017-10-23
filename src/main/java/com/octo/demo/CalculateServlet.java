@@ -12,7 +12,7 @@ import com.octo.utils.CalculatorConstants;
 
 public class CalculateServlet extends HttpServlet {
 	/**
-	 * CalculateServlet doGet method
+	 * CalculateServlet doGet method added
 	 */
 	private static final long serialVersionUID = 1L;
 	private DemoCalculator calculator = new DemoCalculator();

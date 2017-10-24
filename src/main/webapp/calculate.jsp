@@ -1,7 +1,7 @@
 <html>
 <head>
 <style>
-h1 {
+h2 {
     color: yellow;
     font-family: garamond;
     font-size: 229%

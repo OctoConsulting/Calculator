@@ -9,7 +9,7 @@ h1 {
 body {
     color: Red;
     font-family: arial;
-    font-size: 100%;
+    font-size: 120%;
 }
 </style>
 </head>

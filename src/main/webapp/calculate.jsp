@@ -14,7 +14,7 @@ body {
 </style>
 </head>
 <title>Your Own Simple Calculator</title>
- <h1>Demo Calculator App 2018</h1>
+ <h1>Demo Calculator App 2018 </h1>
         <body>
        
                 <form action="CalculateServlet" method="GET">

@@ -11,9 +11,9 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 /**
- * Unit test for simple App.
+ * Integration test for simple App.
  */
-public class CalculatorTest {
+public class CalculatorIntegrationTest {
 	private static DemoCalculator calculator = new DemoCalculator();
 
 
@@ -24,7 +24,6 @@ public class CalculatorTest {
 
 	@After
 	public void afterEachTest() {
-		System.out.println("This is exceuted after each Test ");
 		System.out.println("This is exceuted after each Test ");
 		System.out.println("This is exceuted after each Test ");
 	}

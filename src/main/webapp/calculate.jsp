@@ -3,8 +3,8 @@
 <style>
 h2 {
     color: yellow;
-    font-family: garamond;
-    font-size: 235%
+    font-family: arial;
+    font-size: 256
 }
 body {
     color: Red;

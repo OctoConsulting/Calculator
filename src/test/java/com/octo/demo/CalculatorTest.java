@@ -31,7 +31,7 @@ public class CalculatorTest {
 		System.out.println("This is exceuted after each Test ");
 		System.out.println("This is exceuted after each Test ");
 		System.out.println("This is exceuted after each Test ");
-		System.out.println("This is exceuted after each Test ")
+		System.out.println("This is exceuted after each Test ");
 	}
 
 	@Test

@@ -17,11 +17,6 @@ public class CalculatorTest {
 	private static DemoCalculator calculator = new DemoCalculator();
 
 
-//	@Before
-//	public void beforeEachTest() {
-//		System.out.println("This is executed before each Test ");
-//	}
-
 	@After
 	public void afterEachTest() {
 		System.out.println("This is exceuted after each Test ");

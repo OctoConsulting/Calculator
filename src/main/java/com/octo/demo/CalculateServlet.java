@@ -11,6 +11,7 @@ import java.io.*;
 import com.octo.utils.CalculatorConstants;
 
 public class CalculateServlet extends HttpServlet {
+	
 	/**
 	 * CalculateServlet doGet method added
 	 */

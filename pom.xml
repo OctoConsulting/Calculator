@@ -102,7 +102,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.15</version>
+				<version>2.19.1</version>
 			</plugin>
 			<!-- Used for integration tests -->
 			<plugin>
@@ -136,7 +136,7 @@
 			<properties>
 				<!-- Optional URL to server. Default value is http://localhost:9000 -->
 				<sonar.host.url>
-					http://ec2-52-41-106-59.us-west-2.compute.amazonaws.com:9000
+					<!--http://ec2-52-41-106-59.us-west-2.compute.amazonaws.com:9000 -->
 				</sonar.host.url>
 			</properties>
 		</profile>

@@ -13,6 +13,7 @@ public class DemoCalculator implements DemoCalculatorInterface {
 	 */
 	public DemoCalculator() {
 		// TODO Auto-generated constructor stub
+		
 	}
 
 	/* (non-Javadoc)

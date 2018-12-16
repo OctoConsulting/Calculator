@@ -15,7 +15,8 @@ import org.junit.Test;
  */
 public class CalculatorTest {
 
-	private static DemoCalculator calculator = new DemoCalculator();
+	private static DemoCalcula
+	tor calculator = new DemoCalculator();
 
 	@After
 	public void afterEachTest() {

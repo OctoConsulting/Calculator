@@ -14,8 +14,7 @@ import org.junit.Test;
  * Unit test for simple App.
  */
 public class CalculatorTest {
-	
-	
+
 	private static DemoCalculator calculator = new DemoCalculator();
 
 	@After

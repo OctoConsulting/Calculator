@@ -29,7 +29,7 @@ public class CalculatorTest {
 	public void testSum() {
 		int result = calculator.findSum(4, 5);
 		int result1 = calculator.findSum(4, 5);
-		assertEquals(9, result)
+		assertEquals(9, result);
 	}
 
 	@Test

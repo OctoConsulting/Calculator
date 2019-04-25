@@ -12,6 +12,7 @@ import org.junit.Test;
 
 /**
  * Unit test for simple App.
+ * Author: Viswanath Nandanavanam
  */
 public class CalculatorTest {
 

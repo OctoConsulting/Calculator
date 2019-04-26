@@ -24,7 +24,7 @@ public class CalculatorIntegrationTest {
 
 	@After
 	public void afterEachTest() {
-		System.out.println("This is exceuted after each Test ");
+		System.out.println("This is exceuted after each Test ")
 		System.out.println("This is exceuted after each Test ");
 	}
 

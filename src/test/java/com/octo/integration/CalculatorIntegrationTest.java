@@ -11,6 +11,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 /**
+Author: Viswanath Nandanavanam
  * Integration test for simple App.
  */
 public class CalculatorIntegrationTest {

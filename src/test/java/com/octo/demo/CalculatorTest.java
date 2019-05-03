@@ -12,6 +12,7 @@ import org.junit.Test;
 
 /**
  * Unit test for simple App.
+ *
  * Author: Viswanath Nandanavanam
  */
 public class CalculatorTest {
@@ -37,7 +38,7 @@ public class CalculatorTest {
 	@Test
 	public void testDivison() {
 		try {
-			int result = calculator.findDivision(12, 2);
+			int result = calculator.findDivision(14, 2);
 			assertEquals(6, result);
 		} catch (Exception e) {
 			e.printStackTrace(System.err);

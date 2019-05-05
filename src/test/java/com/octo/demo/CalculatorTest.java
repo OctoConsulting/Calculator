@@ -40,7 +40,7 @@ public class CalculatorTest {
 	public void testDivison() {
 		try {
 			int result = calculator.findDivision(14, 2);
-			assertEquals(6, result);
+			assertEquals(7, result);
 		} catch (Exception e) {
 			e.printStackTrace(System.err);
 		}

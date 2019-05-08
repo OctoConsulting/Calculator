@@ -38,8 +38,8 @@ public class CalculatorTest {
 	@Test
 	public void testDivison() {
 		try {
-			int result = calculator.findDivision(14, 2);
-			assertEquals(7, result);
+			int result = calculator.findDivision(16, 2);
+			assertEquals(8, result);
 		} catch (Exception e) {
 			e.printStackTrace(System.err);
 		}

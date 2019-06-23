@@ -16,7 +16,6 @@ import org.junit.Test;
  * Author: Viswanath Nandanavanam 
  */
 public class CalculatorTest {
-
 	private static DemoCalculator calculator = new DemoCalculator();
 
 	

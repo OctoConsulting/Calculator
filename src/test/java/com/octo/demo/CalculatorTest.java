@@ -10,7 +10,6 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
-
 /**
  * Unit test for simple App.
  * Author: Viswanath Nandanavanam 
@@ -18,7 +17,6 @@ import org.junit.Test;
 public class CalculatorTest {
 	private static DemoCalculator calculator = new DemoCalculator();
 
-	
 	@After
 	public void afterEachTest() {
 		System.out.println("This is executed after each Test");

@@ -15,6 +15,7 @@ import org.junit.Test;
  */
 public class CalculatorTest {
 	private static DemoCalculator calculator = new DemoCalculator();
+	
 	@After
 	public void afterEachTest() {
 		System.out.println("This is executed after each Test");
